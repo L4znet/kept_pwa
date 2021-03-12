@@ -6,8 +6,8 @@
 </template>
 
 <script>
-  import Navbar from './components/navbar';
-  import Content from './components/content';
+  import Navbar from './components/Navbar';
+  import Content from './components/Content';
   export default {
     components: {
       Navbar,
@@ -19,6 +19,11 @@
 <style lang="scss">
   body {
     background-color: rgb(240, 240, 240);
+    display: flex;
+  }
+
+  #app {
+    display: flex;
   }
 
 </style>

@@ -1,13 +1,13 @@
 <template>
-    <main>
+    <article>
         <slot></slot>
-    </main>
+    </article>
 </template>
 <script>
     export default {
-        name: 'Content'
+        name: 'LoadPictures'
     }
 </script>
-<style lang="scss">
+<style lang="">
 
 </style>

@@ -41,7 +41,7 @@ export default {
 }
 
 nav {
-  background-color: rgb(207, 175, 154);
+  background-color: rgb(159, 154, 207);
   height: 100vh;
   width: 200px;
   display: flex;
@@ -52,12 +52,12 @@ nav {
     ul {
       display: flex;
       flex-direction: column;
-      border-top: 1px solid rgb(179, 152, 134);
+      border-top: 2px solid darken(rgb(159, 154, 207), 10);
 
       li {
         width: 100%;
         height: 60px;
-        background-color: rgb(207, 175, 154);
+        background-color: rgb(159, 154, 207);
 
         a {
           color: rgb(0, 0, 0);
@@ -72,7 +72,7 @@ nav {
           text-transform: uppercase;
         }
         &:hover {
-          background-color: darken(rgb(207, 161, 130), 3);
+          background-color: darken(rgb(159, 154, 207), 3);
         }
       }
     }

@@ -1,14 +1,13 @@
 <template>
-  <div class="home">
-    <h1>fdsdfsdfs</h1>
-  </div>
+  <load-pictures></load-pictures>
 </template>
 
 <script>
-
+  import LoadPictures from '../components/LoadPictures'
   export default {
     name: 'Home',
     components: {
+      LoadPictures
     }
   }
 </script>
