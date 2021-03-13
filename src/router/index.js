@@ -12,10 +12,15 @@ const routes = [
     name: 'About',
     component: () => import('../views/About.vue')
   },
-    {
-    path: '/add',
-    name: 'Add',
-    component: () => import('../views/Add.vue')
+  {
+    path: '/add_picture',
+    name: 'Add Picture',
+    component: () => import('../views/AddPicture.vue')
+  },
+  {
+    path: '/add_tag',
+    name: 'Add Tag',
+    component: () => import('../views/AddTag.vue')
   }
 ]
 
