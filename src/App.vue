@@ -18,12 +18,13 @@
 
 <style lang="scss">
   body {
-    background-color: rgb(228, 228, 228);
+    background-color: rgb(236, 236, 236);
     display: flex;
   }
 
   #app {
     display: flex;
+    width: 100%;
   }
 
 </style>
