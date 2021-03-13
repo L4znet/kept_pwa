@@ -1,20 +1,26 @@
 <template>
     <form action="">
-        <Input-form :name="picture">
-            <input type="file" accept="image/*" @change="uploadImage($event)" id="file-input" name="picture">
-        </Input-form>
+        <slot></slot>
     </form>
 </template>
 <script>
-    import InputForm from './elements/Input';
+
 
     export default {
         name: 'FormAdd',
         components: {
-            InputForm
-        }
+
+        },
+        props: ['placeholder']
     }
 </script>
-<style lang="">
+<style lang="scss">
+    form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 
 </style>
