@@ -2,9 +2,9 @@
     <form-add>
         <input-form>
             <label for="">Nom </label>
-            <input type="text" @change="uploadImage($event)" id="text-input" name="resource" :placeholder="placeholder">
+            <input type="text" id="text-input" name="resource" v-model="name" :placeholder="placeholder">
         </input-form>
-        <button-form>Ajouter ce tag</button-form>
+        <button-form @click.prevent="addTag()">Ajouter ce tag</button-form>
     </form-add>
 </template>
 
@@ -18,7 +18,17 @@
             FormAdd,
             InputForm,
             ButtonForm
-        }
+        },
+        methods: {
+            addTag() {
+
+            }
+        },
+        data() {
+            return {
+                name: this.name
+            }
+        },
     }
 </script>
 
