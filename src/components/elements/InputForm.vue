@@ -29,6 +29,7 @@
             font-size: 22px;
             padding-left: 20px;
             margin-top: 10px;
+            font-weight: 300;
         }
     }
 
