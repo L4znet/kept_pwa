@@ -15,7 +15,10 @@
     <ul>
       <ul>
         <li-nav>
-          <router-link to="/add">Ajouter</router-link>
+          <router-link to="/add_picture">Ajouter une image</router-link>
+        </li-nav>
+        <li-nav>
+          <router-link to="/add_tag">Ajouter un tag</router-link>
         </li-nav>
       </ul>
     </ul>
@@ -31,7 +34,7 @@
   };
 </script>
 <style lang="scss">
-  $bg_header: rgb(68, 56, 179);
+  $bg_header:rgb(226, 135, 75);
 
   * {
     margin: 0;
@@ -46,6 +49,7 @@
     background-color: $bg_header;
     height: 100vh;
     width: 200px;
+    min-width: 200px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
