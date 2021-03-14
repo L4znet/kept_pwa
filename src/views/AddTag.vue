@@ -27,7 +27,7 @@
                 if (this.name !== "") {
                     axios({
                         method: "post",
-                        url: "http://localhost:3000/tags",
+                        url: "https://apikept.charly-e.com/tags",
                         data: {
                             name: this.name
                         }

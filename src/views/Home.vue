@@ -16,7 +16,7 @@
     async mounted() {
       axios({
         method: "get",
-        url: "http://localhost:3000/pictures"
+        url: "https://apikept.charly-e.com/pictures"
       })
         .then((res) => {
           this.pictures = res.data;

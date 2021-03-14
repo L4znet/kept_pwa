@@ -39,7 +39,7 @@
                 if (this.name !== "" && this.tag !== undefined && this.path !== "") {
                     axios({
                         method: "post",
-                        url: `http://localhost:3000/tags/${this.tag}/pictures`,
+                        url: `https://apikept.charly-e.com/tags/${this.tag}/pictures`,
                         data: {
                             name: this.name,
                             path: this.path,
@@ -60,7 +60,7 @@
         async mounted() {
             axios({
                 method: "get",
-                url: "http://localhost:3000/tags"
+                url: "https://apikept.charly-e.com/tags"
             })
                 .then((res) => {
                     this.tags = res.data;

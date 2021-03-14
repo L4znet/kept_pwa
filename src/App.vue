@@ -18,7 +18,7 @@
       loadPicture(tagId) {
         axios({
           method: "get",
-          url: `http://localhost:3000/tags/${tagId}/pictures`,
+          url: `https://apikept.charly-e.com/tags/${tagId}/pictures`,
         })
           .then((res) => {
             this.picturesObject = res.data;

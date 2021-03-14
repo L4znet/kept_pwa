@@ -56,7 +56,7 @@
     async mounted() {
       axios({
         method: "get",
-        url: "http://localhost:3000/tags"
+        url: "https://apikept.charly-e.com/tags"
       })
         .then((res) => {
           this.tags = res.data;
