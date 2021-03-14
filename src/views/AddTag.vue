@@ -2,9 +2,11 @@
     <form-add>
         <input-form>
             <label for="">Nom </label>
-            <input type="text" id="text-input" name="resource" v-model="name" :placeholder="placeholder">
+            <input type="text" id="text-input" name="resource" v-model="name">
         </input-form>
-        <button-form @click.prevent="addTag()">Ajouter ce tag</button-form>
+        <div class="button">
+            <button-form @click.prevent="addTag()">Ajouter ce tag</button-form>
+        </div>
     </form-add>
 </template>
 
@@ -12,6 +14,7 @@
     import FormAdd from '../components/FormAdd'
     import InputForm from '../components/elements/InputForm'
     import ButtonForm from '../components/elements/ButtonForm'
+    import axios from 'axios'
     export default {
         name: 'AddPicture',
         components: {
@@ -21,7 +24,24 @@
         },
         methods: {
             addTag() {
-
+                if (this.name !== "") {
+                    axios({
+                        method: "post",
+                        url: "http://localhost:3000/tags",
+                        data: {
+                            name: this.name
+                        }
+                    })
+                        .then((res) => {
+                            if (res.status == 200) {
+                                this.$router.push('/');
+                            }
+                        })
+                        .catch((error) => {
+                            console.log('Une erreur a été rencontrée', error)
+                        }).finally(() => {
+                        });
+                }
             }
         },
         data() {
@@ -33,6 +53,12 @@
 </script>
 
 <style lang="scss">
-
+    .button {
+        width: 50%;
+        display: flex;
+        align-items: flex-end;
+        margin-top: 30px;
+        flex-direction: column;
+    }
 
 </style>
