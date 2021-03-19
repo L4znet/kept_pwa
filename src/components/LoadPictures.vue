@@ -1,9 +1,9 @@
 <template>
     <article v-for="picture in pictures" :key="picture">
         <div class="picture">
-            <img :src="pictures.path">
+            <img :src="picture.path">
         </div>
-        <h2>{{ pictures.name }}</h2>
+        <h2>{{ picture.name }}</h2>
     </article>
 </template>
 <script>

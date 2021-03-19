@@ -56,10 +56,11 @@
     async mounted() {
       axios({
         method: "get",
-        url: "https://apikept.charly-e.com/tags"
+        url: "https://pwaapikept.cleverapps.io/tags"
       })
         .then((res) => {
           this.tags = res.data;
+          console.log(this.tags)
         })
         .catch((error) => {
           console.log('Une erreur a été rencontrée', error)

@@ -19,7 +19,10 @@
         url: "https://pwaapikept.cleverapps.io/pictures"
       })
         .then((res) => {
+
           this.pictures = res.data;
+          console.log(this.pictures)
+
         })
         .catch((error) => {
           console.log('Une erreur a été rencontrée', error)
