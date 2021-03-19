@@ -18,7 +18,7 @@
       loadPicture(tagId) {
         axios({
           method: "get",
-          url: `https://apikept.charly-e.com/tags/${tagId}/pictures`,
+          url: `https://pwaapikept.cleverapps.io/tags/${tagId}/pictures`,
         })
           .then((res) => {
             this.picturesObject = res.data;

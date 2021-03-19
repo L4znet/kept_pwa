@@ -16,7 +16,7 @@
             this.id = this.$route.params['id']
             axios({
                 method: "get",
-                url: `https://apikept.charly-e.com/tags/${this.id}/pictures`
+                url: `https://pwaapikept.cleverapps.io/tags/${this.id}/pictures`
             })
                 .then((res) => {
                     console.log(res)

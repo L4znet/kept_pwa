@@ -27,7 +27,7 @@
                 if (this.name !== "") {
                     axios({
                         method: "post",
-                        url: "https://apikept.charly-e.com/tags",
+                        url: "https://pwaapikept.cleverapps.io/tags",
                         data: {
                             name: this.name
                         }

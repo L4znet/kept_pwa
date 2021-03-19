@@ -39,7 +39,7 @@
                 if (this.name !== "" && this.tag !== undefined && this.path !== "") {
                     axios({
                         method: "post",
-                        url: `https://apikept.charly-e.com/tags/${this.tag}/pictures`,
+                        url: `https://pwaapikept.cleverapps.io/tags/${this.tag}/pictures`,
                         data: {
                             name: this.name,
                             path: this.path,
@@ -60,7 +60,7 @@
         async mounted() {
             axios({
                 method: "get",
-                url: "https://apikept.charly-e.com/tags"
+                url: "https://pwaapikept.cleverapps.io/tags"
             })
                 .then((res) => {
                     this.tags = res.data;

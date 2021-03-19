@@ -16,7 +16,7 @@
     async mounted() {
       axios({
         method: "get",
-        url: "https://apikept.charly-e.com/pictures"
+        url: "https://pwaapikept.cleverapps.io/pictures"
       })
         .then((res) => {
           this.pictures = res.data;
