@@ -47,6 +47,9 @@
                     })
                         .then((res) => {
                             if (res.status == 200) {
+                                console.log(this)
+                                console.log(this.tag)
+
                                 this.$router.push('/');
                             }
                         })
